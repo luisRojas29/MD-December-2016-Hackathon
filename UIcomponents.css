@@ -516,7 +516,10 @@ input[id^="drop"]:checked ~.drop-list {
 
 .tab-container {
 	background: #89C4F4;
-	width: 500px;
+	border-radius: 5px;
+	box-shadow: 2px 1px 5px #000000;
+	margin: 2em 0 2em 0;
+	width: 350px;
 }
 
 .tab-container ul {
@@ -527,6 +530,7 @@ input[id^="drop"]:checked ~.drop-list {
 	cursor: pointer;
 	display: inline-block;
 	margin: auto 5px;
+	padding: 10px 0;
 	text-align: center;
 	width: 50px;
 }
@@ -554,6 +558,7 @@ input[id^="drop"]:checked ~.drop-list {
 
 .tab-shadow {
 	background: none;
+	box-shadow: none;
 }
 
 .tab-container ul .last-li-3 {
