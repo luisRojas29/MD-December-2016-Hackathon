@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=false">
   <link rel="stylesheet" type="text/css" href="UIcomponents.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>MD December 2016 Hackathon</title>
@@ -11,16 +13,7 @@
         <h1>December 2016 Hackathon</h1>
         <h4>Modern Developer</h4>
     </div>
-    <nav>
-        <ul>
-            <li><a href="#radios-element">Radio Buttons &amp; Checkboxes</a></li>
-            <li><a href="#dropdown-element">Dropdown</a></li>
-            <li><a href="#paper-element">Paper/Shadow</a></li>
-            <li><a href="#input-element">Inputs</a></li>
-            <li><a href="#tabs-element">Tabs</a></li>
-            <li><a href="#element">Carousel</a></li>
-        </ul>
-    </nav>
+
 </header>
   <main class="content">
 
@@ -101,7 +94,6 @@
         <div class="square shadow-3 sqaure-animate animate-level-3"></div>
         <div class="square shadow-4 sqaure-animate animate-level-4"></div>
         <div class="square shadow-5 sqaure-animate animate-level-5"></div>
-        </div>
       </section>
       <section class="rounded">
         <h1>Rounded Sqaures</h1>
@@ -137,20 +129,28 @@
       </section>
     </article>
     
-    <article id="input-element"  class="component-wrapper">
-      <h2>UI Component 4</h2>
-      <section class="component-showcase">
-        
-      </section>
-      <section class="component-options">
-        <ul>
-          <li><button>Option 1</button></li>
-          <li><button>Option 2</button></li>
-          <li><button>Option 3</button></li>
-          <li><button>Option 4</button></li>
-        </ul>
-      </section> 
-    </article>
+    <article class="component-wrapper input-component">
+        <h2>Input</h2>
+        <form>
+          <div class="input-style-1">
+            <input type="text" placeholder="Placeholder " required>
+            <label for="name">Style 1</label>
+          </div>
+          <div class="input-style-2">
+            <input type="text" required>
+            <label for="name">Style 2</label>
+          </div>
+          <div class="input-style-2 icon">
+            <input type="text" required>
+            <label for="name">Style 2 With Icon</label>
+            <i class="material-icons">dns</i>
+          </div>
+          <div class="input-style-1">
+            <input id="name" name="name" type="text" placeholder="This input is disabled" disabled>
+            <label for="name">Disabled</label>
+          </div>
+        </form>
+      </article>
 
     <article id="tabs-element" class="component-wrapper">
 
